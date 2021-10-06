@@ -2,13 +2,16 @@ package com.company1.EmployeeWageComputationUsingOOps;
 
 public class EmployeeWageChildClass extends EmployeeWageParentClass {
 
-    //Check Employee Attendance
-    protected void employeeAttendance() {
+    //Calculating Daily wage of Employee
+    protected void dailyEmployeeWage(){
+        System.out.println("--------Daily Wage---------");
         if (randomCheck == IS_PRESENT) {
-            System.out.print("Employee is Present");
+            EMP_HRS = 8;
         }
         else {
-            System.out.print("Employee is Absent");
+            EMP_HRS = 0;
         }
+        TotalWageInDay = WAGE_PER_HR * EMP_HRS;
+        System.out.println("Total wage in Day : "+TotalWageInDay);
     }
 }
