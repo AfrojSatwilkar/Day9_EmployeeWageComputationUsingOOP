@@ -8,10 +8,7 @@ public class EmployeeWageComputation {
         //creating object for child class
         EmployeeWageChildClass employeeData = new EmployeeWageChildClass();
 
-        //Getting random number
-        employeeData.getRandomNumber();
-
-        //Getting employee wage using switch
-        employeeData.empWageSwitch();
+        //Getting Wages for month
+        employeeData.wagesForMonth();
     }
 }
