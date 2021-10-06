@@ -2,11 +2,14 @@ package com.company1.EmployeeWageComputationUsingOOps;
 
 public class EmployeeWageChildClass extends EmployeeWageParentClass {
 
-    //Calculating Daily wage of Employee
-    protected void dailyEmployeeWage(){
-        System.out.println("--------Daily Wage---------");
-        if (randomCheck == IS_PRESENT) {
+    //calculating daily wage of part time employee
+    protected void partTimeEmployeeWage(){
+        System.out.println("--------Part Time---------");
+        if (randomCheck == IS_FULL_TIME) {
             EMP_HRS = 8;
+        }
+        else if (randomCheck == IS_PART_TIME) {
+            EMP_HRS = 4;
         }
         else {
             EMP_HRS = 0;
@@ -14,4 +17,5 @@ public class EmployeeWageChildClass extends EmployeeWageParentClass {
         TotalWageInDay = WAGE_PER_HR * EMP_HRS;
         System.out.println("Total wage in Day : "+TotalWageInDay);
     }
+
 }
