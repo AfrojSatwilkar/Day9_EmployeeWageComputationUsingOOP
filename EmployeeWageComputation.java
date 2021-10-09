@@ -5,13 +5,16 @@ public class EmployeeWageComputation {
 
         System.out.println("Welcome to Employee Wage Computation Program using OOP");
 
-        //creating object for child class
-        EmployeeWageChildClass employeeData = new EmployeeWageChildClass();
+        //creating object
+        EmployeeWageChildClass DMart = new EmployeeWageChildClass("D-Mart",20,10,50);
+        EmployeeWageChildClass StarHome = new EmployeeWageChildClass("Star Home",10,15,80);
 
-        //Getting random number
-        employeeData.getRandomNumber();
+        //Getting Wages For Working Hour And Days for company
+        DMart.wagesForWorkingHourAndDays();
+        System.out.println(DMart);
+        StarHome.wagesForWorkingHourAndDays();
+        System.out.println(StarHome);
 
-        //Checking for employee attendance
-        employeeData.employeeAttendance();
+
     }
 }
