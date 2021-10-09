@@ -26,7 +26,7 @@ public class EmployeeWageChildClass extends EmployeeWageParentClass {
         return TOTAL_SALARY;
     }
     @Override
-    public String toString(){
+    public String toString() {
         return "Total Employee wage for company "+company+" is : "+TOTAL_SALARY;
     }
 
